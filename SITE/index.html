@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens/pokeballl.png">
+    <title>PokeCenter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+            <div class="navbar">
+            <header class="mainHeader">
+                <div class="centralizar">
+                    <div class="pesquisa">
+                        <div style="position:relative; top: 0.7px; right: -10px;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: rgb(138, 138, 138); position: relative; right: -3px;"> | </i> 
+                            <input type="text" style="border: none ; outline: none; position: relative; top: 2px; font-size: 22px;">
+                        </div>
+                    </div>
+                
+                    <ul style="position: relative; top: 10px">
+                        <li><a href="FireFile\Login.html">Login</a></li>
+                        <li><a href="FireFile\Form.html">Cadastro</a></li>
+                    </ul>            
+                </div>
+            </header>
+        </div>
+    
+        <div class="subtonel b-caixa">
+            <div class="temas" style="position: relative; right: -30px; margin-top: 50px;">
+                <button onclick="changeImage('imagens/Blastoise1.gif');" class="button4"><i class="fa-regular fa-droplet" style="color:white"></i></button>
+                <button onclick="changeImage('imagens/chacha.gif');mudartexto" class="button2" onmo><i class="fa-regular fa-fire-flame-curved" style="color:white"></i></button>
+                <button onclick="changeImage('imagens/bubu.gif')" class="button3"><i class="fa-regular fa-leaf" style="color:white"></i></button>
+            </div>
+
+            <div class="cont1">
+                <img src="imagens/Blastoise1.gif" alt="Blastoise" id="cha">
+            </div>
+
+            <div class="cont2">
+                <h2>O PRIMEIRO POKÉMON CRIADO FOI O RHYDON</h2>
+                <h3> Esse pokémon foi o primeiro design criado pelo ilustrador Sugimori Ken. Dá pra ver os designs iniciais dele na arte conceitual do que seria o rascunho de pokémon, chamada CAPSULE MONSTERS antes. Por isso o Rhydon é o pokémon número 1 na pokédex.</h3>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="tango" style="position: relative; top: -80px">
+            <div class=" grade" style="margin-bottom: 75px;">
+                <div> 
+                    <a href=""><img class="borda" src="imagens/camisaash.jpg" alt="Capeta"></a>
+                    <p class="centralizar azul"><b>Camisa</b></p>
+                    <p class="centralizar azul">R$ 39,99</p>
+                </div>
+                <div> 
+                    <a href=""><img class="borda" src="imagens/moletom.jpg" alt="Capeta"></a>
+                    <p class="centralizar azul"><b>Moletom</b></p>
+                    <p class="centralizar azul">R$ 61,49</p>
+                </div>
+                <div> 
+                    <a href=""><img class="borda" src="imagens/Capoteed.png" alt="Capeta"></a>
+                    <p class="centralizar azul"><b>Casaco</b></p>
+                    <p class="centralizar azul">R$ 69,90</p>
+                </div>
+                <div> 
+                    <a href=""><img class="borda" src="imagens/calca.jpg" alt="Capeta"></a>
+                    <p class="centralizar azul"><b>Calça</b></p>
+                    <p class="centralizar azul">R$ 59,80</p>
+                </div>
+                <div> 
+                    <a href=""><img class="borda" src="imagens/fantasia.jfif" alt="Capeta"></a>
+                    <p class="centralizar azul"><b>Fantasia</b></p>
+                    <p class="centralizar azul">R$ 99,90</p>
+                </div>
+                <div> 
+                    <a href=""><img class="borda" src="imagens/conjunto.jfif" alt="Capeta"></a>
+                    <p class="centralizar azul"><b>Conjunto</b></p>
+                    <p class="centralizar azul">R$ 109,90</p>
+                </div>
+            </div>   
+             
+        </div>
+    </main>
+<hr style="width: 600px; margin:auto;" color="silver">
+    <footer class="down centralizar" id="fot">
+        
+        <span style="color: rgb(85, 85, 85); font-family: 'Questrial', sans-serif;">&copy; Este site foi feito em 2022 por Luiz Guilherme e Daniel Barros </span>
+        <div style="position: relative; top: -13px;">
+            <a href="https://github.com/Lu1zf0"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://github.com/Thatoon"><i class="fa-brands fa-square-github"></i></a> 
+        </div>
+    </footer>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".cont2"), {
+            max: 25,
+            speed: 800,
+            glare: true,
+            "max-glare":0.7
+        });
+    </script>
+    <script src="script.js"></script>
+    <script>
+            function changeImage(fileName) {
+            let img = document.querySelector("#cha");
+            img.setAttribute("src", fileName)
+    }
+    </script>
+    <script>
+        function mudartexto(){
+            document.querySelector('texto').innerHTML = "Teste";
+        }
+    </script>
+
+</body>
+</html>

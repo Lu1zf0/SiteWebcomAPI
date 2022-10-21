@@ -1,0 +1,406 @@
+
+/*classes estáticas*/
+
+
+*{
+    margin: 0;
+
+}
+
+.mainHeader{
+    padding: 25px;
+    margin: auto;
+}
+
+.mainHeader ul{
+    list-style: none;
+}
+
+.mainHeader ul li{
+    display: inline;
+}
+
+.mainHeader ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.mainHeader ul li a:hover{
+    color: rgb(192, 192, 192);
+}
+
+.banner{
+    background: rgb(0,112,255);
+    background: linear-gradient(180deg, rgba(0,112,255,1) 0%, rgba(96,195,228,1) 100%);
+    height: 630px;
+}
+
+img{
+    width: 100%;
+    
+}
+
+#f00{
+    width: 500px;
+    border-radius: 50px;
+    border-color:rgb(255, 217, 0);
+}
+
+#f00::placeholder{
+    color: rgba(0, 0, 0,40%);
+}
+
+/* codigo Secundario */
+.aside{
+    float: right;
+    display: block;
+    width: 500px;
+    height: 250px;
+    border-radius: 25px;
+
+}
+.button{
+    cursor: pointer;
+    width: 100px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: solid rgb(255, 255, 255) 3px;
+    border-color: white;
+}
+.button:hover{
+    background: rgb(179, 53, 53);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.grid-baixo{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+}
+input{
+    border-radius: 10px;
+    border: 10px;
+    width: 200px;
+}
+.tonel{
+    max-width: 1200px;
+    padding: 25px;
+    margin: 0 auto;
+}
+.subtonel{
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+   
+}
+
+.centralizar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.grade{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2fr;
+    gap: 70px;
+    
+}
+
+
+.baixo{
+    background: rgb(8,98,209);
+    background: linear-gradient(180deg, rgba(8,92,209,1) 0%, rgb(14, 72, 153) 6%, rgba(7, 74, 168,1) 6%, rgba(32,38,68,1) 100%);
+    background-size: cover;
+    padding: 25px;
+    margin: auto;
+    height: 700px;
+    
+}
+
+
+
+.dialogo{
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.direita{
+    justify-content: right;
+}    
+
+
+.down{
+    margin: auto;
+    padding: 25px;
+    height: auto;
+}
+
+#fot{
+    background: white;
+    gap: 10px;
+    justify-content: center;
+    padding-right: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+#fot i{
+    color: rgb(0, 0, 0);
+}
+
+#fot i:hover{
+    color: rgb(192, 192, 192);
+}
+
+.amarelo{
+    color: rgb(241, 207, 11);
+    font-size: 25px;
+}
+
+.azul{
+    color: blue;
+    font-size: 20px;
+}
+
+.borda{
+    border-radius: 5%;
+}
+
+#cha{
+    height:300px;
+    width:300px ;
+}
+
+.borda:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter:drop-shadow(15px 10px 5px rgba(0,0,0,40%)) ;
+    transition: 0.5s;
+ }
+
+.fina:hover{
+    transition: 1s;
+ }
+
+ .produtos{
+    padding-top: 20px;
+ }
+
+ .caixa2{
+    padding: 50px;
+    margin: auto;
+    width: 450px;
+    height: 500px;
+    position: relative;
+    left: -30px;
+    height: 500px;
+    width: 400px;
+    background-image: url('../imagens/base.png');
+ }
+
+ .tonelbaixo{
+    width: 1100px;
+    height: 600px;
+    margin: auto;
+    padding: 30px;
+    
+ }
+
+ .cartao{
+    border: solid beige;
+ }
+
+
+ /* 21/09 */
+.cont1{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+.cont2{
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border: solid rgba(255, 255, 255, 0.37) 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.cont2:hover{
+    transition: 0.5s;
+    background-image: url('../imagens/rhydon.png');
+}
+
+.b-caixa{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    position: relative;
+    top: -60px;
+}
+
+
+.button2, .button3,.button5{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.384);
+    border: solid rgba(255, 255, 255, 0.37) 2px;
+   
+}
+
+.button4{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: #00ccff;
+    border: solid rgba(255, 255, 255, 0.37) 2px;
+}
+
+.buttontransp{
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+.nonee{
+    display: none;
+}
+
+.button2:active{
+    transform: scale(1.2);
+}
+
+.butfire{
+    background-color: red;
+}
+
+.butgrama{
+    background-color: rgb(20, 219, 120);
+}
+
+.button2:hover{
+    background: rgb(179, 53, 53);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.button3:hover{
+    background: rgb(20, 219, 120);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.button5:hover{
+    background: rgb(0, 0, 0);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.navbar{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+.cont2 h2{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.cont2 h3{
+    color: white;
+    padding-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#tam{
+    font-size: 25px;
+ 
+}
+
+.caixa2 img{
+    height: 400px;
+    width: 400px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#fot span{
+    color: white;
+    font-size: 15px;
+}
+
+.negrito{
+    font-weight: 600;
+}
+/* 22/09 */
+.pesquisa{
+    width: 800px;
+    height: 35px;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    display: inline;
+    border: solid rgb(233, 233, 233);
+}
+.pesquisa input{
+    width: 750px;
+    height:30px;
+    background: transparent;
+    
+}
+
+.tango{
+    width: 1300px;
+    height: 980px;
+    margin: auto;
+    padding: 30px;
+    background: whitesmoke;
+    border: solid white 10px;
+    border-radius: 30px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.foda{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.fogo{
+    background: rgb(255,226,0);
+    background: linear-gradient(0deg, rgba(255,226,0,1) 0%, rgba(212,127,0,1) 100%);
+    color: yellow;
+}
+
+.grama{
+    background: rgb(50,190,2);
+    background: linear-gradient(180deg, rgba(50,190,2,1) 0%, rgba(9,73,2,1) 100%);
+}
+
+main .tango .grade p{
+    color: black;
+}

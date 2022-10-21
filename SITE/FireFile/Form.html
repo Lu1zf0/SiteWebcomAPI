@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/pokeballl.png">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Note.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="wall">
+    <form method="post" action="javascript:cadastro()">
+    <div class="tonel dadoscadastro" style="height: auto;">
+        <p style="font-size: 30px;">Cadastro</p>
+        <p> Nome </p>
+        <input type="text" id="nomecadastro"><hr>
+
+        <p> Usuario </p>
+        <input type="text" id="usuariocadastro"><hr>
+
+        <p> Email </p>
+        <input type="text" id="emailcadastro"><hr>
+
+        <p type="password"> Senha </p>
+        <input type="password" id="senhacadastro"><hr>
+
+        <p>Confirmar senha </p>
+        <input type="password" id="senhacadastroconfirm"><hr>
+        
+        <div class="subtonel" style="position: relative; right: -40px;">
+           <a> <button type="button" onclick="cadastro()"> Cadastrar </button> </a>
+           <button type="button" onclick="limpar()"></button>
+        </div>
+    </form>
+    </div>
+
+    <script src="../senhalogin.js"></script>
+</body>
+</html>
